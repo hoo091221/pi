@@ -185,16 +185,13 @@
             var rawFile = new XMLHttpRequest();
             rawFile.open("GET", file, false);
             rawFile.onreadystatechange = function() {
-                if (rawFile.readyState === 4) {
-                    if (rawFile.status === 200 || rawFile.status == 0) {
-                        return rawFile.responseText;
-                    }
-                }
+                allText = rawFile.responseText;
             }
             rawFile.send(null);
+            return rawFile.responseText;
         }
 
-        document.getElementById('text').innerHTML = pi;
+        document.getElementById('text').innerHTML = readTextFile('./pi.txt');
 
         function copy() {
             var input1 = document.getElementById('input1').value;
