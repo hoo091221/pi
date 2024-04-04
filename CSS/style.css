@@ -18,8 +18,7 @@
 
 .content {
     width: 100vw;
-    height: 200vh;
-    background-color: #999;
+    /* height: 200vh; */
     padding-top: 3vw;
 }
 
@@ -61,6 +60,7 @@
 
 body {
     font-family: 'TheJamsil5Bold';
+    background-color: #999;
 }
 
 input {
@@ -112,9 +112,9 @@ input {
 }
 
 #text.animate {
-    transform: translateX(-99.85%);
+    transform: translateX(-100%);
     transition-property: transform;
-    transition-duration: 2500s;
+    transition-duration: 250000s;
     transition-timing-function: linear;
     transform: infinite;
 }
@@ -192,13 +192,6 @@ input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
     -webkit-appearance: none;
     margin: 0;
-}
-
-
-/* Firefox  */
-
-input[type='number'] {
-    -moz-appearance: textfield;
 }
 
 @media (width < 1000px) {
