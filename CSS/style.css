@@ -185,6 +185,10 @@ button {
     top: 2px;
 }
 
+.block {
+    display: block;
+}
+
 
 /* Chrome, Safari, Edge, Opera */
 
