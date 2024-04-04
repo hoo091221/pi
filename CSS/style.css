@@ -209,6 +209,6 @@ input::-webkit-inner-spin-button {
         font-size: 3.5vw;
     }
     #text {
-        font-size: 0px;
+        display: none;
     }
 }
