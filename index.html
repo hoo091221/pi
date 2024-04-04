@@ -207,9 +207,8 @@
         }
 
         function search() {
-            var input3 = document.getElementById('input3').value;
-            if (pi.indexOf() != '-1') {
-                document.getElementById('pinum').innerHTML = pi.indexOf() + '번째 자리에 있네요!';
+            if (pi.indexOf(document.getElementById('input3').value) != '-1') {
+                document.getElementById('pinum').innerHTML = pi.indexOf(document.getElementById('input3').value) + '번째 자리에 있네요!';
             } else {
                 document.getElementById('pinum').innerHTML = '흠... 존재하지 않네요.';
             }
