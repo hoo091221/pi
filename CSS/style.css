@@ -208,7 +208,7 @@ input::-webkit-inner-spin-button {
     .ptitle {
         font-size: 3.5vw;
     }
-    #text {
+    .block {
         display: none;
     }
 }
